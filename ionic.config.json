@@ -1,0 +1,8 @@
+{
+  "name": "mob.debooky",
+  "app_id": "9d4bf291",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
