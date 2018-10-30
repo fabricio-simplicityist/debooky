@@ -1,17 +1,40 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-toolbar>
+        
+        <!--<form id="homePage-form1">
+            <ion-searchbar placeholder="" name="" id="homePage-search1"></ion-searchbar>
+        </form>-->
+        <ion-buttons end>
+            <button ion-button color="royal">
+                <ion-icon name="notifications"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    
+    <h5 
+        id="home-features-places" 
+        style="color:#666666;font-weight:400;text-align:center;">
+        {{ 'Destacados' | translate }}
+    </h5>
+      
+    <div id="home-features-places-container">
+        <p text-center>
+            {{ 'Aún no existen lugares destacados :(' | translate }}
+        </p>
+    </div>
+
+    <h5 
+        id="home-lastest-places" 
+        style="color:#666666;font-weight:400;text-align:center;">
+        {{ 'Recientes' | translate }}
+    </h5>
+
+    <div id="home-lastest-places-container">
+        <p text-center>
+            {{ 'Aún no existen lugares recientes :(' | translate }}
+        </p>
+    </div>
 </ion-content>
